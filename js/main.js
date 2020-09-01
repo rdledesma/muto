@@ -43,6 +43,7 @@ $(document).ready(function(){
         multipleKeyboard: true,
         directionNav:false,
         keyboard: true,
+        mousewheel: true,
     });
 	
 });
