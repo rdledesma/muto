@@ -1,36 +1,37 @@
 let btnItems=document.querySelectorAll(".item .btn-item");
+let items=document.querySelectorAll(".item");
 
 for(let i=0;i<btnItems.length;i++){
-
    btnItems[i].addEventListener("click",function(e){
 
 	let btn=e.target;
 	if(btn.className=="btn-item active"){
-	  ocultarOpciones();
+	  hideOptions();
 	 }
 	else{
-	 removerClase();
-	  btnItems[i].style.opacity='1';
-	  btn.classList.add("active");
+	 removeClass();
+	  items[i].classList.remove("inactive");
+	  btnItems[i].classList.add("active");
 	}
 
 	})
 
 }
 
-function removerClase(){
+function removeClass(){
 	for(let i=0;i<btnItems.length;i++){
+		items[i].classList.add("inactive");
 	  btnItems[i].classList.remove("active");
-	  btnItems[i].style.opacity='0';
+	   
 	  
 	}
 }
 
 
-function ocultarOpciones(){
+function hideOptions(){
 	for(let i=0;i<btnItems.length;i++){
 	  btnItems[i].classList.remove("active");
-	  btnItems[i].style.opacity='1';
+	  items[i].classList.remove("inactive");
 	  
 	}
 

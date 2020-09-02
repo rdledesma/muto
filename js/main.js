@@ -40,7 +40,7 @@ $(document).ready(function(){
 	$('.flexslider').flexslider({
         animationLoop:false,
         slideshow:false,
-        multipleKeyboard: true,
+        // multipleKeyboard: true,
         directionNav:false,
         keyboard: true,
         mousewheel: true,
