@@ -219,8 +219,8 @@ content:'\02212';
 
 .profile p{
     font-size: 1.3em;
-    line-height: 2.4em;
-    padding-bottom: 20px;
+    line-height: 1.4em;
+    /* padding-bottom: 20px; */
 }
 
 
@@ -414,7 +414,7 @@ content:'\02212';
   .profile p {
     font-size: 1.1em;
     line-height: 0.5em;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
    }
 
     .info-contact{
@@ -586,7 +586,7 @@ font-size: 1.2em;
 		.profile p {
 		    font-size: 1.1em;
 		    line-height: 2.3em;
-		    padding-bottom: 20px;
+		    /* padding-bottom: 20px; */
 		 }
 
 		 .info-contact{

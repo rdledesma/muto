@@ -109,9 +109,9 @@
         }
         // MOUSEWHEEL:
         if (slider.vars.mousewheel) {
-          slider.bind('mousewheel', function(event, delta, deltaX, deltaY) {
+          $(document).bind('mousewheel', function(event, delta, deltaX, deltaY) {
             event.preventDefault();
-            var target = (delta < 0) ? slider.getTarget('next') : slider.getTarget('prev');
+            var target = (delta < 0) ? slider.getTarget('prev') : slider.getTarget('next');
             slider.flexAnimate(target, slider.vars.pauseOnAction);
           });
         }
