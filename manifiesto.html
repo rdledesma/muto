@@ -41,7 +41,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 offset-md-3 text-left">
-                        <p>
+                        <p class="effect">
                             "Conocer a nuestros clientes es lo que importa. 
                             Conocerlos más allá de sí mismos. 
                             Necesitamos ir adentro, hasta donde ya no hay nada o 
@@ -95,5 +95,31 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+    <script>
+        (function($) 
+         {
+            $.fn.writeText = function(content) {
+                var contentArray = content.split(""),
+                    current = 0,
+                    elem = this;
+                setInterval(function() {
+                    if(current < contentArray.length) {
+                        elem.text(elem.text() + contentArray[current++]);
+                    }
+                }, 45);
+            };
+        
+        })(jQuery);
+        
+        $(".effect").each(function(index) {
+            var text = $( this ).text();
+            $(this).empty();
+            $(this).writeText(text);
+        });
+        //$("#holder").writeText("This is some text");
+        
+        </script>
 </body>
 </html>
