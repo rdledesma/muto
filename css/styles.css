@@ -157,6 +157,10 @@ header .btn-menu{
 /*.container{
 	margin-top: 12%;
 }*/
+.mp-5{
+	padding-top: 3rem;
+	margin-top: 3rem;
+}
 
 /*------ MENU DESPLEGABLE EQUIPO----*/
 .main-container{
@@ -360,12 +364,18 @@ content:'\02212';
 /*Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- */
    @media screen and (max-width: 767px) {
+	header{
+		position: relative;
+	}
 	.main{
 		height: auto;
 	}
 
 	.caption-main h1{
 		font-size: 60px;
+	}
+	.section{
+		height: auto;
 	}
 
 	/*Full menu*/
@@ -391,6 +401,10 @@ content:'\02212';
    .menu-text br{
    	 line-height: 5px;
    }
+   .mp-5{
+	padding-top: 1rem;
+	margin-top: 1rem;
+}
 
  .portafolio-item{
 	width:65%;
@@ -430,14 +444,14 @@ content:'\02212';
 	#inicio .flexslider{
 		width: 95%;
 		max-width: 250px;
-		margin: 200px auto 0;
+		margin: 10px auto 0;
 
 	}
 	#servicios .flexslider{
-		width: 95%;
+		width: 100%;
 		max-width: 300px;
-		margin: 100px auto 0;
-		top: 100px;
+		margin: 10px auto 0;
+		top: 10px;
 
 	}
 	#inicio .flex-control-nav.flex-control-paging{
@@ -467,9 +481,9 @@ content:'\02212';
 		margin-top: 0%;
 	}
 	
-	#servicios .serv{
+	/* #servicios .serv{
 		top: 200px;
-	}
+	} */
 
 }
 /* Móviles en vertical
@@ -494,7 +508,8 @@ content:'\02212';
 	.full-menu .navegacion ul li a {
 	 font-size:20px;
     
-     }
+	 }
+	
 
 .full-menu .wrap {
   	margin-top:40px !important;

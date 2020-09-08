@@ -8,6 +8,12 @@ $(document).ready(function(){
 			$('.full-menu').css({'left':'0'});
 			$('.title-menu').css({'display':'block'});
 			$('.btn-menu').css({'color':'#fff'});
+			if( $('section').attr('id') == 'manifiesto' ){
+				$('#linkmanifiesto').css({'text-decoration':'underline'});
+			}
+			if( $('section').attr('id') == 'nosotros' ){
+				$('#linknosotros').css({'text-decoration':'underline'});
+			}
 		}else{
 			$('.btn-menu span').removeClass('fas fa-times').addClass('fas fa-ellipsis-v').css({'color':'#fff'});
 			$('.full-menu').css({'left':'-100%'});
@@ -26,6 +32,12 @@ $(document).ready(function(){
 			$('.full-menu').css({'left':'0'});
 			$('.title-menu').css({'display':'block'}); 
 			$('.btn-menu').css({'color':'#fff'});
+			if( $('section').attr('id') == 'servicios' ){
+				$('#linkservicios').css({'text-decoration':'underline'});
+			}
+			if( $('section').attr('id') == 'contacto' ){
+				$('#linkcontacto').css({'text-decoration':'underline'});
+			}
 		}else{
 			$('.btn-menu span').removeClass('fas fa-times').addClass('fas fa-ellipsis-v').css({'color':'#000F2C'});
 			$('.full-menu').css({'left':'-100%'});
