@@ -6,10 +6,16 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'medium';
+	src: url('NeueHaasDisplay-Light.ttf');
+  }
+
 body{
 	
 	background-color: white;
 	/* overflow: hidden; */
+	font-family: 'medium';
 }
 .bg-blue{
 	background-color: #000F2C;
