@@ -505,10 +505,10 @@ content:'\02212';
 	#logo{
 		width: 80%;
 	}
-	.mp-5{
+	/* .mp-5{
 		padding-top: 0;
 		margin-top: 0;
-	}
+	} */
 	.pl-pr{
 		padding-left: 3rem;
 		padding-right: 3rem;
