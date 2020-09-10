@@ -165,6 +165,7 @@ header .btn-menu{
 	margin-top: 3rem;
 }
 
+
 /*------ MENU DESPLEGABLE EQUIPO----*/
 .main-container{
 width:100%;
@@ -333,7 +334,10 @@ content:'\02212';
 .border-input{
 	border-style: none none solid none;
 }
-
+.mps-5{
+	padding-top: 3rem;
+	margin-top: 3rem;
+}
 
 #servicios .flex-control-nav li a{
 	display: inline-block;
@@ -368,12 +372,12 @@ content:'\02212';
 /*Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- */
    @media screen and (max-width: 767px) {
-	header{
+	/* header{
 		position: relative;
-	}
-	.main{
+	} */
+	/* .main{
 		height: auto;
-	}
+	} */
 	#logo{
 		width: 80%;
 	}
@@ -381,10 +385,7 @@ content:'\02212';
 	.caption-main h1{
 		font-size: 60px;
 	}
-	/* .section{
-		height: auto;
-	} */
-
+	
 	/*Full menu*/
 	.full-menu .navegacion ul li a{
 		font-size: 20px;
@@ -408,9 +409,13 @@ content:'\02212';
    .menu-text br{
    	 line-height: 5px;
    }
-	.mp-5{
-		padding-top: 1rem;
+	.mps-5{
+		padding-top: 15rem;
 		margin-top: 1rem;
+	}
+	.mp-5{
+		padding-top: 3rem;
+		margin-top: 3rem;
 	}
 
  .portafolio-item{
@@ -449,17 +454,18 @@ content:'\02212';
 		
 
 	#inicio .flexslider{
-		width: 95%;
-		max-width: 250px;
+		width: 100%;
+		max-width: 300px;
 		margin: 0 auto;
+		top:120px;
 
 	}
+	
 	#servicios .flexslider{
 		width: 100%;
 		max-width: 300px;
-		margin: 10px auto 0;
-		top: 10px;
-
+		margin: 0 auto;
+		top: 0;
 	}
 	#inicio .flex-control-nav.flex-control-paging{
 		right: 250px;
@@ -488,11 +494,11 @@ content:'\02212';
 		margin-top: 0%;
 	}
 	.mtop{
-		margin-top: 25px;
+		margin-top: 5rem;
 	}
-	/* #servicios .serv{
-		top: 200px;
-	} */
+	.mt{
+		margin-top: 5rem;
+	}
 
 }
 /* Móviles en vertical
@@ -500,15 +506,19 @@ content:'\02212';
 
 @media (max-width: 480px) {
 	.main{
-		height: 100vh;
+		height: auto;
+	}
+	.mt{
+		margin-top: 10rem;
+	}
+	.mps-5{
+		padding-top: 1rem;
+		margin-top: 1rem;
 	}
 	#logo{
 		width: 80%;
 	}
-	/* .mp-5{
-		padding-top: 0;
-		margin-top: 0;
-	} */
+	
 	.pl-pr{
 		padding-left: 3rem;
 		padding-right: 3rem;
@@ -612,8 +622,18 @@ content:'\02212';
 		font-size: calc(1.325rem + .9vw);
 		/*  */
 	}
+	.mp-5{
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
 	.mtop{
-		margin-top: 50px;
+		margin-top: 10rem;
+	}
+	.mtop2{
+		margin-top: 3rem;
+	}
+	.mt{
+		margin-top: 3rem;
 	}
 	#servicios .serv{
 		top: 10px;
@@ -625,22 +645,25 @@ content:'\02212';
 	.profile p {
 		font-size: 1.1em;
 		line-height: 2.3em;
-		/* padding-bottom: 20px; */
-		}
+	}
 
 		.info-contact{
 		font-size: 1.0em;
 	}
-		
+	p.lh{
+		line-height: 0.8em;
+	}	
 }
 
 /*Tablets en horizonal y escritorios normales
    ------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	header{
+	/* header{
 		position: relative;
+	} */
+	.full-menu .wrap {
+		margin-top:40px !important;
 	}
-
 	#inicio .flexslider{
 		width: 100%;
 		max-width: 300px;
@@ -651,14 +674,18 @@ content:'\02212';
 		width: 100%;
 		max-width: 400px;
 		margin: 0 auto;
-		top: 0;
+		top: 100px;
 	}
+	
 	#inicio .flex-control-nav.flex-control-paging{
 		right: 100%;
 		width: 40%;
 	}
 	h2{
 		font-size: calc(1.325rem + .9vw);
+	}
+	.mt{
+		margin-top: 5rem;
 	}
 
 	.full-menu .navegacion ul li a {
@@ -688,9 +715,9 @@ content:'\02212';
 
 	.portafolio-item {
 	  width: 60%;
-	  }
+	}
 	   
-	 .portafolio-text{
+	.portafolio-text{
 	   width: 40%;
 	   top: 20%;
 	  -webkit-transform: translateY(40%);
@@ -700,7 +727,5 @@ content:'\02212';
   
 	.portafolio-text h1{
 	  font-size: 1.8em;
-	  }
-  
-  
-  }
+	}  
+}
