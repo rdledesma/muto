@@ -1,12 +1,11 @@
 $(document).ready(function(){
 
 	$('#btn-menu-blue').click(function(){
-		if( $('.btn-menu span').attr('class') == 'fas fa-ellipsis-v' ){
-			$('.btn-menu span').removeClass('fas fa-ellipsis-v').addClass('fas fa-times').css({'color':'#000F2C'});
+		if( $('.btn-menu span').attr('class') == 'close-menu' ){
+			$('.btn-menu span').removeClass('close-menu').addClass('fas fa-times').css({'color':'#000F2C'});
 			$("#logo").attr("src","img/logoA.png");
 			$('.flexslider').css({'display':'none'});
 			$('.full-menu').css({'left':'0'});
-			$('.title-menu').css({'display':'block'});
 			$('.btn-menu').css({'color':'#fff'});
 			if( $('section').attr('id') == 'manifiesto' ){
 				$('#linkmanifiesto').css({'text-decoration':'underline'});
@@ -15,22 +14,20 @@ $(document).ready(function(){
 				$('#linknosotros').css({'text-decoration':'underline'});
 			}
 		}else{
-			$('.btn-menu span').removeClass('fas fa-times').addClass('fas fa-ellipsis-v').css({'color':'#fff'});
+			$('.btn-menu span').removeClass('fas fa-times').addClass('close-menu').css({'color':'#fff'});
 			$('.full-menu').css({'left':'-100%'});
 			$("#logo").attr("src","img/logoB.png");
 			$('.flexslider').css({'display':'flex'});
-			$('.title-menu').css({'display':'none'});
 		}
 	});
 	$('#btn-menu-white').click(function(){
 
-		if( $('.btn-menu span').attr('class') == 'fas fa-ellipsis-v' ){
+		if( $('.btn-menu span').attr('class') == 'close-menu' ){
 
-			$('.btn-menu span').removeClass('fa fa-ellipsis-v').addClass('fas fa-times').css({'color':'#000F2C'});
+			$('.btn-menu span').removeClass('close-menu').addClass('fas fa-times').css({'color':'#000F2C'});
 			$("#logo").attr("src","img/logoA.png");
 			$('.flexslider').css({'display':'none'});
-			$('.full-menu').css({'left':'0'});
-			$('.title-menu').css({'display':'block'}); 
+			$('.full-menu').css({'left':'0'}); 
 			$('.btn-menu').css({'color':'#fff'});
 			if( $('section').attr('id') == 'servicios' ){
 				$('#linkservicios').css({'text-decoration':'underline'});
@@ -39,11 +36,10 @@ $(document).ready(function(){
 				$('#linkcontacto').css({'text-decoration':'underline'});
 			}
 		}else{
-			$('.btn-menu span').removeClass('fas fa-times').addClass('fas fa-ellipsis-v').css({'color':'#000F2C'});
+			$('.btn-menu span').removeClass('fas fa-times').addClass('close-menu').css({'color':'#000F2C'});
 			$('.full-menu').css({'left':'-100%'});
 			$("#logo").attr("src","img/logoA.png");
 			$('.flexslider').css({'display':'flex'});
-            $('.title-menu').css({'display':'none'});
             $('.btn-menu').css({'color':'#000F2C'});
 		}
 

@@ -21,33 +21,32 @@
         <header class="bg-white">
 			<div class="wrap text-blue">
 				<a href="index.html"><img id="logo" src="img/logoA.png" alt=""></a>
-                <div class="title-menu"><b>Menú</b></div>
-				<div class="btn-menu" id="btn-menu-white">Menú
-				<span class="fas fa-ellipsis-v"></span>
+                <div class="btn-menu title-menu" id="btn-menu-white"><b>Menú</b>
+                    <span class="close-menu"></span>
 				</div>
 			</div>
         </header>
         <section class="section text-blue" id="contacto">
-            <div class="container mt" id="app">
+            <div class="container" id="app">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <h2><b>contacto</b></h2>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-6 text-left">
                         <div class="row">
                             <input type="text" v-model="name" id="name" placeholder="nombre y apellido" class="form-control border-input">
                         </div>
-                        <div class="row">
-                            <input type="email" vmodel="email" name="" id="email" placeholder="E-mail" class="form-control border-input">
+                        <div class="row mt-3">
+                            <input type="email" vmodel="email" name="" id="email" placeholder="e-mail" class="form-control border-input">
                         </div>
-                       <div class="row pt-2">
-                        <textarea name="" id="msg" cols="30" v-model="message" rows="1" placeholder="Mensaje" class="form-control border-input"></textarea>
+                       <div class="row mt-3">
+                        <textarea name="" id="msg" cols="30" v-model="message" rows="1" placeholder="mensaje" class="form-control border-input"></textarea>
                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                            <button @click="enviar" type="submit" class="text-blue float-right bg-white border-0 mt-5" style="cursor: pointer;">Enviar <i class="fas fa-arrow-right"></i></button>
+                    <div class="col-md-9">
+                            <button @click="enviar" type="submit" class="text-blue float-right bg-white border-0 mt-3 size" style="cursor: pointer;">Enviar <i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
