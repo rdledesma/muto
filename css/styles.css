@@ -327,8 +327,8 @@ p.effect{
     border-radius: 50%;
     font-size: 16px;
     position: fixed;
-    bottom: 40px;
-	right: 80px;
+    bottom: 30px;
+	right: 120px;
 	float: right;
     cursor: pointer;
 	border: 4px solid transparent;
@@ -441,20 +441,30 @@ p.effect{
 	p.effect, .container-icon{
 		font-size: 1.2rem;
 	}
-	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
 	#button-down {
-		width: 30px;
-		height: 30px;
-		font-size: 13px;
-		right: 35PX;
+		right: 30px;
 		bottom: 10px;
+	   }
+	.container{
+		padding-left: 26.656px;
+		padding-right: 26.656px;
+	}
+	.pt{
+		padding-top: 2.2rem;
 	}
 }
 /* Móviles en vertical
    ------------------------------------------------------------------------- */
+@media (max-width: 320px) {
+/*------ MANIFIESTO - NOSOTROS ----*/
+	p.effect, .container-icon{
+		font-size: 1.1rem !important;
+	}
+}
 @media (max-width: 480px) {
 	h2{
 		font-size: calc(1.325rem + .9vw);
+		margin-bottom: 0;
 	}
 	.main{
 		height: auto;
@@ -565,19 +575,17 @@ p.effect{
 		text-align: left !important;
 	}
 	.mt-12{
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
 	.ml{
 		margin-left: 0;
 	}
 	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
 	#button-down {
-		width: 30px;
-		height: 30px;
-		font-size: 13px;
 		right: 20px;
 		bottom: 20px;
-	}
+	   }
+	
 }
 
 /*Tablets en horizonal y escritorios normales
@@ -601,7 +609,7 @@ p.effect{
 	#inicio .flexslider{
 		width: 100%;
 		max-width: 300px;
-		margin-top: 150px;
+		margin-top: 100px;
 	}
 	#inicio .flex-control-nav.flex-control-paging{
 		right: 100%;
@@ -656,6 +664,7 @@ p.effect{
 	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
 	#button-down {
 		right: 40px;
+		bottom: 20px;
 	   }
 	
 }
