@@ -29,10 +29,6 @@ body{
     color: #fff;
 }
 
-.container-icon {
-	font-size: 20px;
-}
-
 .section {
 	min-width: 100%;
     display: flex;
@@ -45,8 +41,8 @@ body{
     font-size: 1.1em;
     line-height: 1.4em;
 }
-.mt-6{
-	margin-top: 6rem;
+.container-icon{
+	font-size: 20px;
 }
 
 /*------ HEADER - MENÚ----*/
@@ -64,14 +60,14 @@ body{
 header{
 	position: fixed;
 	width: 100%;
-	z-index: 1; /* para que se posicione delante de los demas elementos */
+	z-index: 100; /* para que se posicione delante de los demas elementos */
 }
 
 header .wrap{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0px;
+	padding: 20px 0 0;
 }
 
 header .btn-menu{
@@ -125,7 +121,9 @@ header .btn-menu{
 	font-size: 50px;
 	color: #000F2C;
 }
-
+.list-unstyled li{
+	font-size: 1.4rem;
+}
 .full-menu .navegacion ul li a:hover{
 	text-decoration: underline !important;
 }
@@ -147,11 +145,12 @@ header .btn-menu{
 /*------ MANIFIESTO - NOSOTROS ----*/
 p.effect{
 	font-size: 1.7rem;
+	margin-bottom: 0;
 }
 
 /*------ SERVICIOS ----*/
-.mts-6{
-	margin-top: 6rem;
+#servicios .flexslider{
+	margin: 0;
 }
 #servicios .flex-control-nav li a{
 	display: inline-block;
@@ -293,7 +292,9 @@ p.effect{
     line-height: 1.4em;
     /* padding-bottom: 20px; */
 }
-
+.mt-12{
+	margin-top: 12.5rem;
+}
 /*------ CONTACTO ----*/
 
 #email::placeholder{
@@ -312,8 +313,31 @@ p.effect{
 .border-input{
 	border-style: none none solid none;
 }
-.size{
-	font-size: 20px;
+.button-right{
+	font-size: 13px;
+}
+/*BOTON DE IR A LA SIGUIENTE PAGINA*/
+
+#button-down{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 16px;
+    position: fixed;
+    bottom: 40px;
+	right: 80px;
+	float: right;
+    cursor: pointer;
+	border: 4px solid transparent;
+	/* z-index: 10; */
+}
+
+#button-down:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,255,0.1);
 }
 
 /* RESPONSIVE ========== */
@@ -326,19 +350,12 @@ p.effect{
 		margin-top: 0;
 	}
 	
-	.pt-5{
-		padding-top: 5rem!important;
-	}
-	.pt-4{
-		padding-top: 0!important;
-	}
-	.mtop{
-		margin-top: 5rem;
-	}
-	
 	/*------ MENU ------*/
 	.full-menu .navegacion ul li a{
-		font-size: 20px;
+		font-size: 30px;
+	}
+	.list-unstyled li{
+		font-size: 1rem;
 	}
 	.full-menu .menu-text p{
 		font-size: 14px;
@@ -358,7 +375,7 @@ p.effect{
 	/*------ INDEX ------*/
 	#inicio .flexslider{
 		width: 100%;
-		max-width: 300px;
+		max-width: 250px;
 		margin: 0 auto;
 		top:160px;
 	}
@@ -375,23 +392,20 @@ p.effect{
 	#inicio .flex-direction-nav .flex-next{
 		right: 15px;
 	}
-	.mtop{
+	.mtop, .mt{
 		margin-top: 10rem;
 	}
 	/*------ SERVICIOS ------*/
-	.mps-5{
-		padding-top: 15rem;
-		margin-top: 1rem;
-	}
 	#servicios .flexslider{
 		width: 100%;
 		max-width: 300px;
-		margin: 0 auto;
-		top: 0;
+		margin: 50px auto 0;
+		top: 20px;
 	}
-	.mt-5{
-		margin-top: 5rem !important;
+	#servicios .flex-control-nav.flex-control-paging{
+		right: 90%;
 	}
+	
 	/*------ EQUIOPO-MUTO ------*/
 	.portafolio-item{
 		width:65%;
@@ -414,29 +428,47 @@ p.effect{
 		 font-size: 1.0em;
 		 padding-bottom: 20px;
 	}
+	.font-weight-bold {
+		margin-top: 8rem;
+	}
+	.mt-12 {
+		margin-top: 5rem;
+	}
+	.ml{
+		margin-left: 5rem;
+	}
 	/*------ MANIFIESTO - NOSOTROS ----*/
-	p.effect{
-		font-size: 1.3rem;
+	p.effect, .container-icon{
+		font-size: 1.2rem;
+	}
+	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
+	#button-down {
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+		right: 35PX;
+		bottom: 10px;
 	}
 }
 /* Móviles en vertical
    ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
-	p.effect{
-		font-size: 1rem;
-	}
 	h2{
 		font-size: calc(1.325rem + .9vw);
 	}
 	.main{
 		height: auto;
 	}
-	.mt{
-		margin-top: 3rem;
+	.container{
+		padding-left: 24px;
+		padding-right: 24px;
 	}
 	/*------ MENU ------*/
 	.full-menu .navegacion ul li a {
-		font-size:20px;
+		font-size:25px;
+	}
+	.list-unstyled li{
+		font-size: 1rem;
 	}
 	.full-menu .wrap {
 		margin-top:40px !important;
@@ -445,13 +477,6 @@ p.effect{
 		width: 80%;
 	}
 	
-	.pl-pr{
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
-	.container-icon{
-		font-size: 15px;
-	}
 	/*------ INDEX ------*/
 	#inicio .flexslider{
 		width: 100%;
@@ -478,19 +503,7 @@ p.effect{
 		display: inline-block;
 		margin: 0 5px;
 	}
-	.mtop{
-		margin-top: 8rem;
-	}
-	.pt-5{
-		padding-top: 0 !important;
-	}
-	/*------ SERVICIOS ------*/
-	#servicios .flexslider{
-		width: 95%;
-		max-width: 400px;
-		margin-top: 10px;
-		top: 0;
-	}
+	
 	#servicios .flex-control-nav.flex-control-paging{
 		width: 120px;
 		padding: 20px 0px;
@@ -508,12 +521,15 @@ p.effect{
 		margin-bottom: 0px;
 		top: auto;
 	}
-	#servicios .flexslider h2{
-		margin-top: 10px;
+	#servicios .flexslider{
+		width: 100%;
+		max-width: 300px;
+		margin: 10px auto 0;
 	}
-	.mts-6{
+	.mt{
 		margin-top: 0;
 	}
+	
 	/*------ EQUIOPO-MUTO ------*/
 	.portafolio-item{
 		width:100%;
@@ -534,11 +550,33 @@ p.effect{
 	.info-contact{
 		font-size: 1.0em;
 	}
+	.font-weight-bold {
+		padding-left: 15px;
+		margin-top: 0;
+	}
 	p.lh{
 		line-height: 0.8em;
 	}	
-	.mt-5{
-		margin-top: 0 !important;
+	/*------ MANIFIESTO - NOSOTROS ----*/
+	p.effect, .container-icon{
+		font-size: 1.3rem;
+	}
+	.text-justify{
+		text-align: left !important;
+	}
+	.mt-12{
+		margin-top: 10rem;
+	}
+	.ml{
+		margin-left: 0;
+	}
+	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
+	#button-down {
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+		right: 20px;
+		bottom: 20px;
 	}
 }
 
@@ -548,15 +586,16 @@ p.effect{
 	h2{
 		font-size: calc(1.325rem + .9vw);
 	}
-	/* .section p {
-		font-size: 1.5em !important;
-		} */
+	
 	/*------ MENÚ ------*/
 	.full-menu .wrap {
 		margin-top:40px !important;
 	}
 	.full-menu .navegacion ul li a {
 		font-size:40px;   
+	}
+	.list-unstyled li{
+		font-size: 1.2rem;
 	}
 	/*------ INDEX ------*/
 	#inicio .flexslider{
@@ -568,30 +607,30 @@ p.effect{
 		right: 100%;
 		width: 40%;
 	}
-	/*------ MANIFIESTO-NOSOTROS ------*/
-	p.effect{
-		font-size: 1.5rem;
+	.mtop{
+		margin-top: 1rem;
 	}
-	.offset-md-1 {
+	/*------ MANIFIESTO-NOSOTROS ------*/
+	p.effect, .container-icon{
+		font-size: 1.4rem;
+	}
+	/* .offset-md-1 {
 		margin-left: 0 !important;
 	}
 	.col-md-10 {
 		flex: auto !important;
 		max-width: 100% !important;
-	}
+	} */
 	
 	/*------ SERVICIOS ------*/
 	#servicios .flexslider{
 		width: 100%;
-		max-width: 400px;
+		max-width: 300px;
 		margin: 0 auto;
-		top: 70px;
+		top: 100px;
 	}
-	.mts-6{
-		margin-top: 0;
-	}
-	.mtop{
-		margin-top: 1.5rem;
+	.mt{
+		margin-top: 6rem;
 	}
 	/*------ EQUIPO-MUTO ------*/
 	.portafolio-item {
@@ -607,16 +646,18 @@ p.effect{
 	.portafolio-text h1{
 		font-size: 1.7em;
 	}
-	.mt-6{
-		margin-top: 10rem;
+	.col-md-3 {
+		max-width: 100% !important;
 	}
-	/*------ CONTACTO ------*/
-	.size{
-		font-size: 20px;
+	.mt-12 {
+		margin-top: 8rem;
 	}
-	.mt-5{
-		margin-top: 10rem !important;
-	}
+
+	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
+	#button-down {
+		right: 40px;
+	   }
+	
 }
 @media screen and (min-width: 1199px) and (max-width: 1280px) {
 	/*------ EQUIPO-MUTO ------*/
@@ -633,4 +674,12 @@ p.effect{
 	.portafolio-text h1{
 	  font-size: 1.8em;
 	}  
+	/*------ BOTON PARA LA SIGUIENTE PAGINA ----*/
+	#button-down {
+		right: 80px;
+	}
+	
+	.list-unstyled li{
+		font-size: 1.4rem;
+	}
 }
