@@ -257,6 +257,10 @@ p.effect{
 	transition:0.4s ease-in-out;
 }
 
+.item-content ul{
+	list-style: none;
+}
+
 .active + .item-content{
 	max-height:1000px;
 	padding:10px;
@@ -355,7 +359,7 @@ p.effect{
 		font-size: 30px;
 	}
 	.list-unstyled li{
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 	.full-menu .menu-text p{
 		font-size: 14px;
@@ -426,7 +430,7 @@ p.effect{
 	}
 	.info-contact{
 		 font-size: 1.0em;
-		 padding-bottom: 20px;
+		 padding-bottom: 10px;
 	}
 	.font-weight-bold {
 		margin-top: 8rem;
@@ -565,7 +569,7 @@ p.effect{
 		margin-top: 0;
 	}
 	p.lh{
-		line-height: 0.8em;
+		line-height: 1.1em;
 	}	
 	/*------ MANIFIESTO - NOSOTROS ----*/
 	p.effect, .container-icon{
